@@ -1,6 +1,9 @@
 # Fynd Fresh Fashion Task
 
-git clone https://github.com/pratik24mac/Fynd-Task.git
-cd Fynd-Task
-npm install
-gulp
+1. git clone https://github.com/pratik24mac/Fynd-Task.git
+2. cd Fynd-Task
+3. `npm install`
+4. `gulp`
+
+Make sure you have (npm, gulp) installed globally.
+for installing globally 'npm install gulp -g'
