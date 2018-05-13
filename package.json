@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.7.0",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^3.3.7",
     "gulp-connect": "^5.0.0",
     "gulp-livereload": "^3.8.1",
     "gulp-webserver": "^0.9.1",
