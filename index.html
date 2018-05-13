@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miniApp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Fynd Fresh Fashion</title>
+</head>
+
+<body ng-controller="productCtrl">
+    <h2 class="text-center text-info">Fynd Fresh Fashion</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" ng-repeat="img in imgList track by $index">
+                <div class="main-section">
+                    <img ng-src="{{img.image_url}}" class="image img-responsive uploadImg" alt="{{img.name}}">
+                    <div class="overlay">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        <span ng-click="editDialog.open(img)" class="glyphicon glyphicon-pencil"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <edit-img model="editDialog"></edit-img>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="app/js/app.js"></script>
+</body>
+
+</html>
